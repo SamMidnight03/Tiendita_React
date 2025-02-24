@@ -10,10 +10,14 @@ function CarritoProvider({children}) {
     }
 
     function removeProducto(id) {
-
+        setCarrito(producto =>{
+            let nuevoCarrito = [...producto];
+            nuevoCarrito.splice(id, 1);
+            return nuevoCarrito
+        })
     }
 
-    return <carritoContext.Provider value={{carrito,insertProduct}}>
+    return <carritoContext.Provider value={{carrito,insertProduct, removeProducto}}>
         {children}
     </carritoContext.Provider>
 }

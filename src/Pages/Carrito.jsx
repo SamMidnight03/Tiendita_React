@@ -3,7 +3,7 @@ import { carritoContext } from '../Contexts/useCarrito'
 import { Link } from 'react-router'
 
 export default function Carrito() {
-    const {carrito}=useContext(carritoContext)
+    const {carrito, removeProducto}=useContext(carritoContext)
   return (
     <main id='carropage'>
         {carrito.map((articulo, index)=>{
@@ -13,7 +13,7 @@ export default function Carrito() {
                 <span>{articulo.price}</span>
                 
                 <Link className="details" to={`/product/${articulo.id}`}> More Info</Link>
-                <a className='cart' href="#">⛔</a>
+                <a className='cart' href="#" onClick={()=>{removeProducto(index)}}>⛔</a>
             </div>
         })}
     </main>
