@@ -5,8 +5,10 @@ export default function Header() {
     return (
         <header>
             <h1>✨Tiendita✨</h1>
-            <Link to="/">Inicio</Link>
-            <Link to="/Carrito">🛒</Link>
+            <div>
+                <Link to="/">Inicio</Link>
+                <Link to="/Carrito">🛒</Link>
+            </div>
         </header>
     )
 }

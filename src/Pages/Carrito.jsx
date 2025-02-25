@@ -10,10 +10,10 @@ export default function Carrito() {
             return <div className='carrito' key={index}>
                 <h3>{articulo.title}</h3>
                 <img src={articulo.image} alt="" />
-                <span>{articulo.price}</span>
+                <span>${articulo.price}</span>
                 
                 <Link className="details" to={`/product/${articulo.id}`}> More Info</Link>
-                <a className='cart' href="#" onClick={()=>{removeProducto(index)}}>⛔</a>
+                <a className='delete' href="#" onClick={()=>{removeProducto(index)}}>⛔</a>
             </div>
         })}
     </main>

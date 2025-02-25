@@ -16,12 +16,23 @@ header {
     width: 100%;
     background-color: #4C5F7F;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 10px 90px;
     display: flex;
-    justify-content: center;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     z-index: 2;
+}
+
+header div{
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 /*Contenedor de la tienda*/
@@ -103,9 +114,17 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    
     width: 16pc;
     border-radius: 10px;
     padding: 10px;
     background-color: #FFFFFF;
+}
+
+.carrito .delete{
+    font-size: 1.5rem;
+}
+
+.carrito a{
+    text-decoration: none;
 }
