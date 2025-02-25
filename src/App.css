@@ -128,3 +128,14 @@ header a {
 .carrito a{
     text-decoration: none;
 }
+
+/*responsive*/
+
+@media screen and (max-width: 520px) {
+    header{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
